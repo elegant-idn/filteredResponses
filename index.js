@@ -46,6 +46,8 @@ const applyFilters = (responses, filters) => {
   });
 };
 
+app.get('/', (req, res) => res.send("Yeah, working!"));
+
 // Define a route that includes a parameter for formId
 app.get('/:formId/filteredResponses', (req, res) => {
   const { formId } = req.params;
