@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000; // You can use any port that's available
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 const axios = require('axios');
 
